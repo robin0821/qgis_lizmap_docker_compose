@@ -35,7 +35,7 @@ services:
       - ALLOW_IP_RANGE=0.0.0.0/0
       - POSTGRES_USER=dataraft
       - POSTGRES_DBNAME=venus
-      - POSTGRES_PASS=DataRaft
+      - POSTGRES_PASS=******
 #      - POSTGRES_DUMP=geopoppy.tar
     volumes:
       - postgres:/var/lib/postgresql
@@ -49,7 +49,7 @@ services:
       - pgadmin4:/var/lib/pgadmin
     environment:
       - PGADMIN_DEFAULT_EMAIL=robin.du@dataraft.com.au
-      - PGADMIN_DEFAULT_PASSWORD=DataRaft2020
+      - PGADMIN_DEFAULT_PASSWORD=******
   portainer:
     image: portainer/portainer
     restart: always
