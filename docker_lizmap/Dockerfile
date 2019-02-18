@@ -1,5 +1,5 @@
 FROM debian:jessie
-MAINTAINER Julien Ancelin / docker-lizmap 
+MAINTAINER Robin / docker-lizmap 
 
 RUN apt-get -y update \
     && apt-get -t jessie install -y  python-simplejson python-software-properties xauth htop vim curl ntp ntpdate ssl-cert\ 
