@@ -11,7 +11,7 @@ RUN echo "deb     https://qgis.org/debian stretch main" >> /etc/apt/sources.list
 RUN echo "deb-src https://qgis.org/debian stretch main" >> /etc/apt/sources.list
 RUN wget -O - https://qgis.org/downloads/qgis-2017.gpg.key | gpg --import
 RUN gpg --fingerprint CAEB3DC3BDF7FB45
-RUN gpg --export --armor CAEB3DC3BDF7FB45 | sudo apt-key add -
+RUN gpg --export --armor CAEB3DC3BDF7FB45 | apt-key add -
 RUN apt-get -y update
 #--------------------------------------------------------------------------------------------
 # Install stuff
