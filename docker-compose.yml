@@ -16,7 +16,7 @@ services:
     entrypoint: >
       bash -c "/start.sh"
   qgiserver:
-    image: jancelin/qgis-server:2.18LTR
+    image: robin0821/qgis-server:3.4
     restart: always
     volumes:
       - qgis:/home  
