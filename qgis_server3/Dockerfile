@@ -7,8 +7,8 @@ RUN  dpkg-divert --local --rename --add /sbin/initctl
 RUN apt-get -y update
 RUN apt-get install -y gnupg apt-transport-https ca-certificates wget
 # add qgis to sources.list
-RUN echo "deb     https://qgis.org/debian stretch main" >> /etc/apt/sources.list
-RUN echo "deb-src https://qgis.org/debian stretch main" >> /etc/apt/sources.list
+RUN echo "deb     https://qgis.org/debian-ltr stretch main" >> /etc/apt/sources.list
+RUN echo "deb-src https://qgis.org/debian-ltr stretch main" >> /etc/apt/sources.list
 RUN wget -O - https://qgis.org/downloads/qgis-2017.gpg.key | gpg --import
 RUN gpg --fingerprint CAEB3DC3BDF7FB45
 RUN gpg --export --armor CAEB3DC3BDF7FB45 | apt-key add -
