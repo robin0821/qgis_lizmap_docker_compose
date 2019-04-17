@@ -74,6 +74,11 @@ services:
       - 8000:8000
     volumes:
       - qgis:/mnt/fs   
+  osm2po:
+    image: robin0821/osm2po:australia
+    restart: on-failure
+    ports:
+      - 8001:8888
 volumes:
    portainer:
    redis:
