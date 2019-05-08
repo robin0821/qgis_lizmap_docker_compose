@@ -79,6 +79,11 @@ services:
     restart: on-failure
     ports:
       - 8001:8888
+  tileserver-gl:
+    image: robin0821/tileserver-gl:venus
+    restart: on-failure
+    ports:
+      - 8002:80
 volumes:
    portainer:
    redis:
